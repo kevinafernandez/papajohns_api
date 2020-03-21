@@ -4,7 +4,7 @@ module Api
   module V1
     # == StoresController
     class StoresController < ApplicationController
-      before_action :set_store, only: %i[show update destroy play]
+      before_action :set_store, only: %i[show update destroy]
 
       # GET /stores
       def index
