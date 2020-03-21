@@ -2,6 +2,8 @@
 
 # == ApplicationController
 class ApplicationController < ActionController::API
+  include Response
+
   before_action :authorize_request_api
 
   def authorize_request_api
