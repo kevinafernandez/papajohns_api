@@ -1,5 +1,18 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: stores
+#
+#  id         :bigint           not null, primary key
+#  name       :string
+#  address    :text
+#  email      :string           default("francisco.abalan@pjchile.com")
+#  phone      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe Store, type: :model do
@@ -33,6 +46,5 @@ RSpec.describe Store, type: :model do
       subject.attributes = valid_attributes
       expect(subject).to be_valid
     end
-
   end
 end
