@@ -15,6 +15,9 @@
 
 # == Store model
 class Store < ApplicationRecord
+  # Relations
+  has_and_belongs_to_many :products
+
   # Validations
   validates_presence_of :name, :address, :phone
   validates :phone, length: { is: 9,
