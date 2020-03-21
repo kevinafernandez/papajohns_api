@@ -13,7 +13,6 @@
 #  updated_at :datetime         not null
 #
 
-
 # == Seriealizer for Store
 class StoreSerializer
   include FastJsonapi::ObjectSerializer
