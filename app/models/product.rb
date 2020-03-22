@@ -17,7 +17,7 @@
 class Product < ApplicationRecord
   # Relations
   has_and_belongs_to_many :stores
-  belongs_to :order
+  has_and_belongs_to_many :orders
 
   # Validations
   validates_presence_of :name, :sku, :product_type, :price
