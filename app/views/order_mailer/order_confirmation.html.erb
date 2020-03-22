@@ -1,0 +1,15 @@
+<p> Hola, se ha generado una nueva orden, te adjuntamos los datos correspondientes:</p>
+<ul>
+  <li>Nombre de tienda: <%= @store.name %></li>
+  <li>Hora del pedido: <%= @order.created_at.strftime('%H:%M') %></li>
+	<% if @products.present? %>
+		<li> Productos:
+			<ul>
+				<% @products.each do |product| %>
+					<li><%= product.name %></li>
+				<% end %>
+			</ul>
+		</li>
+  	<li>Total: <%= @order.total %></li>
+	<% end %>
+</ul>

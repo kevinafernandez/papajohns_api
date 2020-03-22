@@ -1,0 +1,8 @@
+# frozen_string_literal: true
+
+# Preview all emails at http://localhost:3000/rails/mailers
+class OrderMailerPreview < ActionMailer::Preview
+  def order_confirmation
+    OrderMailer.order_confirmation(Order.last)
+  end
+end
