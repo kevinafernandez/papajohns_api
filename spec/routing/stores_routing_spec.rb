@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe Api::V1::StoresController, type: :routing do
-  describe 'routing for Products' do
+  describe 'routing for Stores' do
     it 'routes to #index action' do
       expect(get: '/api/v1/stores').to route_to('api/v1/stores#index')
     end

@@ -21,6 +21,7 @@ RSpec.describe Store, type: :model do
 
   describe 'relationship' do
     it { should have_and_belong_to_many(:products) }
+    it { should have_many(:orders) }
   end
 
   describe 'validations' do
