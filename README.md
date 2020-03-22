@@ -1,4 +1,4 @@
-# ![Alt text](https://www.pikpng.com/transpng/JbmRwm/ "Papa Johns Test")
+# ![Alt text](https://cdn.imgbin.com/23/20/2/imgbin-papa-john-s-pizza-logo-papa-johns-restaurant-pizza-jHDiCAFa07EdNxRNBLmeGurDx.jpg "Papa Johns Test")
 
 Prueba basada en Ruby on Rails 5.2.4
 
@@ -46,29 +46,31 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 
 ###### Store
 ```
-* Obtener todos las tiendas:
+* Obtener todas las tiendas:
     GET /api/v1/stores/
 
 * Crear una tienda:
     POST /api/v1/stores/
-			{
-				"store": {
-						"name": "Bandera",
-						"address": "Bandera 304",
-						"phone": "912345678"
-				}
+
+		{
+			"store": {
+					"name": "Bandera",
+					"address": "Bandera 304",
+					"phone": "912345678"
 			}
+		}
 
 * Obtener una tienda:    
     GET /api/v1/stores/1
 
 * Actualizar un tienda:
     PUT/PATCH /api/v1/stores/1
-			{
-				"campo1": "dato1",
-				"campo2": "dato2",
-				"campo_n": "dato_n"
-			}
+		
+		{
+			"campo1": "dato1",
+			"campo2": "dato2",
+			"campo_n": "dato_n"
+		}
 
  * Eliminar un tienda:
     DELETE /api/v1/stores/1
@@ -81,27 +83,29 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 
 * Crear un producto:
     POST /api/v1/products/
-			En caso de querer asociar el producto (Product) a una o varias tiendas (Store), agregarle como parametro
-			un arreglo de ids -> ejm: store_ids[1,2]
-			{
-				"product": {
-					"name": "Salsa de Tartara",
-					"sku": "SAL-TOM",
-					"price": 500,
-					"product_type": "Complement"
-				}
+
+		En caso de querer asociar el producto (Product) a una o varias tiendas (Store), agregarle como parametro
+		un arreglo de ids -> ejm: store_ids[1,2]
+		{
+			"product": {
+				"name": "Salsa de Tartara",
+				"sku": "SAL-TOM",
+				"price": 500,
+				"product_type": "Complement"
 			}
+		}
 
 * Obtener un producto:    
     GET /api/v1/products/1
 
 * Actualizar un producto:
     PUT/PATCH /api/v1/products/1
-			{
-				"campo1": "dato1",
-				"campo2": "dato2",
-				"campo_n": "dato_n"
-			}
+
+		{
+			"campo1": "dato1",
+			"campo2": "dato2",
+			"campo_n": "dato_n"
+		}
 
  * Eliminar un producto:
     DELETE /api/v1/products/1
@@ -113,25 +117,27 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
     GET /api/v1/orders/
 
 * Crear una orden:
-		Se debe agregar a la tienda a la cual pertenece a través del "store_id" y los productos como un arreglo de ids, ejemplo:
     POST /api/v1/orders/
-			{
-				"order": {
-					"store_id": 1,
-					"product_ids": [1,2]
-				}
+
+		Se debe agregar a la tienda a la cual pertenece a través del "store_id" y los productos como un arreglo de ids, ejemplo:
+		{
+			"order": {
+				"store_id": 1,
+				"product_ids": [1,2]
 			}
+		}
 
 * Obtener una orden:    
     GET /api/v1/orders/1
 
 * Actualizar una orden:
     PUT/PATCH /api/v1/orders/1
-			{
-				"campo1": "dato1",
-				"campo2": "dato2",
-				"campo_n": "dato_n"
-			}
+
+		{
+			"campo1": "dato1",
+			"campo2": "dato2",
+			"campo_n": "dato_n"
+		}
 
  * Eliminar una orden:
     DELETE /api/v1/orders/1
