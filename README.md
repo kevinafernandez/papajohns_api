@@ -83,16 +83,16 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 * Crear un producto:
     POST /api/v1/products/
 
-		En caso de querer asociar el producto (Product) a una o varias tiendas (Store), agregarle como parametro
-		un arreglo de ids -> ejm: store_ids[1,2]
-		{
-			"product": {
-				"name": "Salsa de Tartara",
-				"sku": "SAL-TOM",
-				"price": 500,
-				"product_type": "Complement"
-			}
+	En caso de querer asociar el producto (Product) a una o varias tiendas (Store), agregarle como parametro
+	un arreglo de ids -> ejm: store_ids[1,2]
+	{
+		"product": {
+			"name": "Salsa de Tartara",
+			"sku": "SAL-TOM",
+			"price": 500,
+			"product_type": "Complement"
 		}
+	}
 
 * Obtener un producto:    
     GET /api/v1/products/1
