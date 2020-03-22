@@ -19,6 +19,7 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do
   describe 'relationship' do
     it { should have_and_belong_to_many(:stores) }
+    it { should have_and_belong_to_many(:orders) }
   end
 
   describe 'validations' do
