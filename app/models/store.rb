@@ -17,6 +17,7 @@
 class Store < ApplicationRecord
   # Relations
   has_and_belongs_to_many :products
+  has_many :orders
 
   # Validations
   validates_presence_of :name, :address, :phone
