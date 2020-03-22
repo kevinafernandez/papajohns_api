@@ -15,12 +15,13 @@
 
 require 'rails_helper'
 
+# == Rspec for Store
 RSpec.describe Store, type: :model do
   subject { described_class.new }
 
-  # describe 'associations' do
-  #  it { should have_many :products }
-  # end
+  describe 'relationship' do
+    it { should have_and_belong_to_many(:products) }
+  end
 
   describe 'validations' do
     let(:valid_attributes) do
@@ -37,12 +38,12 @@ RSpec.describe Store, type: :model do
       }
     end
 
-    it 'should not be valid without attributes' do
+    it 'should not be valid with invalid attributes' do
       subject.attributes = invalid_attributes
       expect(subject).to_not be_valid
     end
 
-    it 'should be valid with attributes' do
+    it 'should be valid with valid attributes' do
       subject.attributes = valid_attributes
       expect(subject).to be_valid
     end
