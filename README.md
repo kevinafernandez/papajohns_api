@@ -80,7 +80,7 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
     DELETE /api/v1/stores/1
 ```
 
-###### Productos
+###### Product
 ```
 * Obtener todos los products:
     GET /api/v1/products/
@@ -115,7 +115,7 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
     DELETE /api/v1/products/1
 ```
 
-###### Ordenes
+###### Order
 ```
 * Obtener todas las ordenes:
     GET /api/v1/orders/
