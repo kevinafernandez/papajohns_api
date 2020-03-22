@@ -1,4 +1,4 @@
-# ![Alt text](https://cdn.imgbin.com/23/20/2/imgbin-papa-john-s-pizza-logo-papa-johns-restaurant-pizza-jHDiCAFa07EdNxRNBLmeGurDx.jpg "Papa Johns Test")
+# ![Alt text](https://2f9k4p3rs05u3rzzgj24k7c0-wpengine.netdna-ssl.com/wp-content/uploads/Papa_Johns_Pizza.png "Papa Johns Test")
 
 Prueba basada en Ruby on Rails 5.2.4
 
@@ -51,12 +51,11 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 
 * Crear una tienda:
     POST /api/v1/stores/
-
 		{
 			"store": {
-					"name": "Bandera",
-					"address": "Bandera 304",
-					"phone": "912345678"
+				"name": "Bandera",
+				"address": "Bandera 304",
+				"phone": "912345678"
 			}
 		}
 
