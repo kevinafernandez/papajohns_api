@@ -67,7 +67,7 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 * Obtener una tienda:    
     GET /api/v1/stores/1
 
-* Actualizar un tienda:
+* Actualizar una tienda:
     PUT/PATCH /api/v1/stores/1
 		
 	{
@@ -76,7 +76,7 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 		"campo_n": "dato_n"
 	}
 
- * Eliminar un tienda:
+ * Eliminar una tienda:
     DELETE /api/v1/stores/1
 ```
 
