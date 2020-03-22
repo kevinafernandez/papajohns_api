@@ -42,7 +42,7 @@ Para este proyecto debes considerar o instalar las siguientes versiones:
 * `app/views/order_mailer/order_confirmation.html.erb` - Vista del servicio de mailing.
 
 ## URL Testing
-https://kevin-papajohns.herokuapp.com/
+https://kevin-papajohns.herokuapp.com/api/v1/
 
 ## Ejemplos
 
