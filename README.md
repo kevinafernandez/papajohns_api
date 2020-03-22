@@ -7,6 +7,7 @@ Prueba basada en Ruby on Rails 5.2.4
 * [Tecnologías](#tecnologías)
 * [Instalación](#instalación) 
 * [Carpetas](#carpetas)
+* [URL testing](#url-testing)
 * [Ejemplos](#ejemplos)
 
 ## Información general
@@ -40,9 +41,13 @@ Para este proyecto debes considerar o instalar las siguientes versiones:
 
 * `app/views/order_mailer/order_confirmation.html.erb` - Vista del servicio de mailing.
 
+## URL Testing
+https://kevin-papajohns.herokuapp.com/
+
 ## Ejemplos
 
 Utiliza algún software o librería de tu preferencia para probar los servicios web (POSTMAN, Curl, entre otros).
+
 
 ###### Store
 ```
