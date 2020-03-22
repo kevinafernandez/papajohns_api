@@ -51,13 +51,13 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 
 * Crear una tienda:
     POST /api/v1/stores/
-		{
-			"store": {
-				"name": "Bandera",
-				"address": "Bandera 304",
-				"phone": "912345678"
-			}
+	{
+		"store": {
+			"name": "Bandera",
+			"address": "Bandera 304",
+			"phone": "912345678"
 		}
+	}
 
 * Obtener una tienda:    
     GET /api/v1/stores/1
@@ -65,11 +65,11 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 * Actualizar un tienda:
     PUT/PATCH /api/v1/stores/1
 		
-		{
-			"campo1": "dato1",
-			"campo2": "dato2",
-			"campo_n": "dato_n"
-		}
+	{
+		"campo1": "dato1",
+		"campo2": "dato2",
+		"campo_n": "dato_n"
+	}
 
  * Eliminar un tienda:
     DELETE /api/v1/stores/1
@@ -118,13 +118,13 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 * Crear una orden:
     POST /api/v1/orders/
 
-		Se debe agregar a la tienda a la cual pertenece a través del "store_id" y los productos como un arreglo de ids, ejemplo:
-		{
-			"order": {
-				"store_id": 1,
-				"product_ids": [1,2]
-			}
+	Se debe agregar a la tienda a la cual pertenece a través del "store_id" y los productos como un arreglo de ids, ejemplo:
+	{
+		"order": {
+			"store_id": 1,
+			"product_ids": [1,2]
 		}
+	}
 
 * Obtener una orden:    
     GET /api/v1/orders/1
@@ -132,11 +132,11 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 * Actualizar una orden:
     PUT/PATCH /api/v1/orders/1
 
-		{
-			"campo1": "dato1",
-			"campo2": "dato2",
-			"campo_n": "dato_n"
-		}
+	{
+		"campo1": "dato1",
+		"campo2": "dato2",
+		"campo_n": "dato_n"
+	}
 
  * Eliminar una orden:
     DELETE /api/v1/orders/1
