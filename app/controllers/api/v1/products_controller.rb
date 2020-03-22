@@ -53,7 +53,7 @@ module Api
 
       # Only allow a trusted parameter "white list" through.
       def product_params
-        params.require(:product).permit(:name, :sku, :product_type, :price)
+        params.require(:product).permit(:name, :sku, :product_type, :price, store_ids: [])
       end
 
       # Serializer for Product
