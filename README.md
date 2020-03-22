@@ -100,11 +100,11 @@ Utiliza algún software o librería de tu preferencia para probar los servicios 
 * Actualizar un producto:
     PUT/PATCH /api/v1/products/1
 
-		{
-			"campo1": "dato1",
-			"campo2": "dato2",
-			"campo_n": "dato_n"
-		}
+	{
+		"campo1": "dato1",
+		"campo2": "dato2",
+		"campo_n": "dato_n"
+	}
 
  * Eliminar un producto:
     DELETE /api/v1/products/1
