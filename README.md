@@ -6,7 +6,7 @@ Prueba basada en Ruby on Rails 5.2.4
 * [Información general](#información-general)
 * [Tecnologías](#tecnologías)
 * [Instalación](#instalación) 
-* [Carpetas](#carpetas)
+* [Carpetas generales](#carpetas-generales)
 * [URL testing](#url-testing)
 * [Ejemplos](#ejemplos)
 
@@ -29,7 +29,7 @@ Para este proyecto debes considerar o instalar las siguientes versiones:
 * Ejecuta todas las migraciones: `rails db:migrate`
 
 
-## Carpetas
+## Carpetas generales
 
 * `app/models` - Contiene tres modelos principales (Store, Product, Order), en él se definen métodos, validaciones y relaciones.
 
